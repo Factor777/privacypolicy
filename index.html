@@ -1,93 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy – Leap To Peak</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #222;
-        }
-        h1, h2 {
-            font-weight: 600;
-        }
-        a {
-            color: #0066cc;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Leap To Peak</title>
+  <meta name="description" content="Privacy Policy for the game Leap To Peak. Explains what we collect, why, and how to contact us." />
+  <style>
+    :root{
+      --bg:#f6f9fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0ea5a4;
+      --accent-2:#0369a1;
+      --maxw:980px;
+      --radius:14px;
+      --shadow: 0 10px 30px rgba(2,6,23,0.06);
+      --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background:linear-gradient(180deg,#f3f7f9 0%,var(--bg) 100%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:36px 18px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+    }
+
+    .header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow);
+      margin-bottom:20px;
+    }
+
+    .logo{
+      width:72px;
+      height:72px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-family:var(--mono);
+      font-size:20px;
+      box-shadow:0 8px 22px rgba(3,105,161,0.12);
+      flex:0 0 72px;
+    }
+
+    .header h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:-0.2px;
+    }
+    .header p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:var(--shadow);
+      line-height:1.65;
+      color:#0b1220;
+    }
+
+    .meta{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      align-items:center;
+      margin-bottom:14px;
+      flex-wrap:wrap;
+    }
+    .updated{color:var(--muted);font-size:13px}
+    .scope{color:var(--muted);font-size:13px}
+
+    .toc{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:12px 0 18px 0;
+    }
+    .toc a{
+      text-decoration:none;
+      color:var(--accent-2);
+      background:rgba(3,105,161,0.06);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:13px;
+    }
+
+    h2{margin-top:18px;margin-bottom:8px;font-size:18px}
+    h3{margin-top:12px;margin-bottom:6px;font-size:15px;color:#0b1220}
+    p{margin:0 0 12px 0}
+    ul{margin:0 0 12px 20px}
+    li{margin:6px 0}
+
+    .note{
+      background:linear-gradient(90deg, rgba(14,165,164,0.06), rgba(3,105,161,0.02));
+      padding:12px;
+      border-radius:10px;
+      margin:12px 0;
+      color:#0b1220;
+      font-size:14px;
+    }
+
+    .contact{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-top:8px;
+      flex-wrap:wrap;
+    }
+    .email{
+      background:#f3f7f9;
+      padding:8px 12px;
+      border-radius:8px;
+      color:var(--accent-2);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    footer{
+      margin-top:16px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    @media (max-width:640px){
+      .header{padding:16px}
+      .card{padding:18px}
+      .logo{width:56px;height:56px;flex:0 0 56px}
+    }
+
+    @media print{
+      body{background:white;padding:0}
+      .card,.header{box-shadow:none}
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
 
-    <h1>Privacy Policy for Leap To Peak</h1>
-    <p>Last updated: <strong>2026‑05‑21</strong></p>
+    <header class="header" role="banner" aria-label="Privacy policy header">
+      <div class="logo" aria-hidden="true">L2P</div>
+      <div>
+        <h1>Privacy Policy — Leap To Peak</h1>
+        <p>Clear, concise information about what we collect and why</p>
+      </div>
+    </header>
 
-    <h2>1. Introduction</h2>
-    <p>
-        This Privacy Policy explains how Leap To Peak collects, uses, and protects your information.
-        By using the game, you agree to the practices described in this policy.
-    </p>
+    <article class="card" role="main" aria-labelledby="policy-title">
+      <div class="meta">
+        <div class="updated">Last updated: <strong>2026-05-21</strong></div>
+        <div class="scope">Applies to: Leap To Peak (the game)</div>
+      </div>
 
-    <h2>2. Information We Collect</h2>
-    <p>
-        Leap To Peak may collect the following types of data:
-    </p>
-    <ul>
-        <li>Usage data (game interactions, performance metrics, session events)</li>
-        <li>Device information (device model, OS version, country/region)</li>
-        <li>Advertising identifiers (IDFA/GAID) when required for ads or analytics</li>
-    </ul>
+      <nav class="toc" aria-label="Table of contents">
+        <a href="#intro">Introduction</a>
+        <a href="#data">What we collect</a>
+        <a href="#use">How we use data</a>
+        <a href="#third">Third parties</a>
+        <a href="#security">Storage & security</a>
+        <a href="#rights">Your rights</a>
+        <a href="#children">Children</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <h2>3. How We Use Your Information</h2>
-    <p>Your data may be used to:</p>
-    <ul>
-        <li>Improve gameplay, performance, and stability</li>
-        <li>Provide analytics to understand player behavior</li>
-        <li>Serve personalized or contextual ads</li>
-        <li>Ensure compliance with legal and platform requirements</li>
-    </ul>
+      <h2 id="intro">1. Introduction</h2>
+      <p>
+        This Privacy Policy explains how <strong>Leap To Peak</strong> ("we", "us", "our") collects,
+        uses, and protects personal data when you play the game or interact with our services.
+        By using Leap To Peak you accept the practices described here.
+      </p>
 
-    <h2>4. Third‑Party Services</h2>
-    <p>
-        Leap To Peak may use third‑party services such as analytics providers and advertising networks.
-        These services may collect data according to their own privacy policies.
-    </p>
+      <h2 id="data">2. What we collect</h2>
+      <p>We collect only the information necessary to run and improve the game:</p>
+      <ul>
+        <li><strong>Gameplay data:</strong> progress, scores, levels, in‑game events</li>
+        <li><strong>Device data:</strong> device model, OS version, language, country</li>
+        <li><strong>Technical identifiers:</strong> advertising IDs (IDFA/GAID) when ads are enabled</li>
+        <li><strong>Analytics:</strong> session length, crash reports, performance metrics</li>
+      </ul>
+      <div class="note" role="note">
+        We do not collect sensitive personal data such as health information, political opinions, or religious beliefs.
+      </div>
 
-    <h2>5. Data Retention</h2>
-    <p>
-        We retain data only as long as necessary for the purposes described in this policy.
-    </p>
+      <h2 id="use">3. How we use data</h2>
+      <p>We use collected data to:</p>
+      <ul>
+        <li>Improve gameplay, fix bugs, and optimize performance</li>
+        <li>Understand player behavior to refine levels and balance</li>
+        <li>Deliver optional, relevant advertising if you opt in</li>
+        <li>Comply with legal obligations and platform policies</li>
+      </ul>
 
-    <h2>6. Your Rights</h2>
-    <p>
-        Depending on your region, you may have rights such as:
-    </p>
-    <ul>
-        <li>Requesting access to your data</li>
-        <li>Requesting deletion of your data</li>
-        <li>Opting out of personalized advertising</li>
-    </ul>
+      <h2 id="third">4. Third‑party services</h2>
+      <p>
+        We may use trusted third parties for analytics, advertising, and hosting.
+        These providers process data under their own privacy terms. Examples include analytics platforms, ad networks, and cloud services.
+      </p>
 
-    <h2>7. Children’s Privacy</h2>
-    <p>
-        Leap To Peak is not intended for children under the age required by local regulations.
+      <h2 id="security">5. Storage and security</h2>
+      <p>
+        We retain data only as long as necessary for the purposes described. We apply industry standard safeguards to protect data from unauthorized access.
+      </p>
+
+      <h2 id="rights">6. Your rights</h2>
+      <p>Depending on your location, you may have rights such as:</p>
+      <ul>
+        <li>Accessing the personal data we hold about you</li>
+        <li>Requesting correction or deletion</li>
+        <li>Restricting or objecting to processing</li>
+        <li>Withdrawing consent for personalized advertising</li>
+      </ul>
+      <p>To exercise these rights, contact us using the details below.</p>
+
+      <h2 id="children">7. Children</h2>
+      <p>
+        Leap To Peak is not intended for children under the minimum age required by local law.
         We do not knowingly collect personal data from children.
-    </p>
+      </p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>
-        We may update this Privacy Policy from time to time. Updates will be posted on this page.
-    </p>
+      <h2 id="contact">8. Contact</h2>
+      <p>If you have questions or wish to make a request, contact us:</p>
+      <div class="contact" role="contentinfo">
+        <a class="email" href="mailto:leaptopeakgame@gmail.com">leaptopeakgame@gmail.com</a>
+        <div style="color:var(--muted);font-size:13px">Please include "Privacy Policy — Leap To Peak" in the subject line</div>
+      </div>
 
-    <h2>9. Contact Us</h2>
-    <p>
-        If you have questions about this Privacy Policy, you can contact us at:<br>
-        <strong>leaptopeakgame@gmail.com</strong>
-    </p>
+      <h3 style="margin-top:18px">Short GDPR / CCPA note</h3>
+      <p style="color:var(--muted);font-size:13px">
+        If you are in the EU or California and need to exercise data subject rights, email us and we will respond in accordance with applicable law.
+      </p>
 
+    </article>
+
+    <footer>
+      © <strong>Leap To Peak</strong>
+    </footer>
+
+  </div>
 </body>
 </html>
